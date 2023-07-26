@@ -1,0 +1,336 @@
+body {
+	height: 100%;
+	width: 100%;
+	background-color: var(--background-color1);
+	padding-top: 5px;
+	font-family: "Calibri";
+	overflow-x: hidden;
+  }
+  
+  :root {
+	--background-color1: #181819;
+	--header-bg-color1: #212525;
+	--playbox-bg-color1: #161619;
+	--search-bg-color1: white;
+	--song-list-bg-color1: #1f1f21;
+	--white-smoke: whitesmoke;
+	--light-grey: lightgrey;
+	--grey: grey;
+	--black: black;
+	--white: white;
+  }
+  
+  .main::-webkit-scrollbar {
+	width: 0px;
+  }
+  
+  .pointer {
+	cursor: pointer;
+  }
+  
+  header {
+	height: 10%;
+	width: 100%;
+	display: flex;
+	position: fixed;
+	background-color: var(--header-bg-color1);
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 100;
+  }
+  
+  .display_inline {
+	display: inline;
+  }
+  
+  .item1 {
+	flex: 10%;
+	display: flex;
+	align-items: center;
+	padding-left: 10px;
+	box-sizing: border-box;
+  }
+  
+  .logo {
+	height: 7.5vmin;
+	width: 7.5vmin;
+	background-color: #ffffffa4;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 10px;
+  }
+  .logo i {
+	font-size: 2.4em;
+	color: #070e1d;
+  }
+  .logoText {
+	height: 10vmin;
+	width: 14vmin;
+	margin-top: 25px;
+	margin-left: 5px;
+	position: relative;
+	margin-bottom: -10px;
+	font-size: 22px;
+	color: #ffffff;
+	line-height: 20px;
+	font-family: "Bauhaus 93";
+	text-shadow: 0px 0px 5px black;
+  }
+  .item2 {
+	flex: 30%;
+	display: flex;
+	align-items: center;
+	padding-left: 80px;
+	font-size: 36px;
+  }
+  
+  .menu_container {
+	font-size: 22px;
+	padding-top: 10px;
+	box-sizing: border-box;
+	color: white;
+	height: 45px;
+	width: auto;
+  }
+  
+  .account a {
+	text-decoration: none;
+	color: var(--black);
+  }
+  
+  .account a:hover .id_content {
+	background-color: var(--white-smoke);
+  }
+  
+  .itemid .id_img:hover + .account {
+	display: block;
+  }
+  
+  .account:hover {
+	display: block;
+  }
+  
+  .row {
+	display: flex;
+	height: 100vh;
+	width: 100vw;
+  }
+  
+  .main {
+	height: 150vh;
+	overflow-y: scroll;
+	flex: 68%;
+	padding-left: 80px;
+	box-sizing: border-box;
+	margin-top: 60px;
+	padding-bottom: 100px;
+  }
+  
+  .band {
+	width: 95%;
+	background-color: #212126;
+	display: flex;
+	color: var(--light-grey);
+	height: 60vh;
+  }
+  
+  .arijit_img {
+	width: 55%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 100%;
+  }
+  .arijit_img img {
+	width: 100%;
+	height: 100%;
+  }
+  
+  .band_description {
+	width: 65%;
+	padding: 20px;
+	box-sizing: border-box;
+  }
+  
+  .band_heading {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+  }
+  
+  .description {
+	margin-top: -35px;
+  }
+  
+  .name {
+	width: 65%;
+	color: var(--white);
+  }
+  
+  
+  .list_favourite i {
+	color: var(--light-grey);
+	margin-left: 30px;
+  }
+  
+  .list_favourite i:hover {
+	color: whitesmoke;
+  }
+  
+  .aside {
+	flex: 32%;
+	height: 100%;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	margin-top: 100px;
+	padding-left: 30px;
+  }
+  
+  .aside_sections {
+	margin-bottom: 30px;
+  }
+  
+  .aside_heading {
+	display: flex;
+	align-items: center;
+	color: var(--light-grey);
+	font-size: 14px;
+	font-family: candara;
+	margin-bottom: 22px;
+	padding-top: 10px;
+  }
+  
+  .aside_heading :nth-child(2) {
+	color: rgb(79, 228, 248);
+  }
+  
+  .heading {
+	font-size: 30px;
+	color: var(--white);
+	width: 75%;
+  }
+  
+  .aside_list1 {
+	display: flex;
+	margin-bottom: 15px;
+	width: 100%;
+	cursor: pointer;
+	padding: 10px;
+  }
+  
+  .aside_list1:hover img {
+	transform: scale(1.1, 1.1);
+  }
+  
+  .aside_img1 img {
+	height: 7vw;
+	width: 7vw;
+	border-radius: 2.5px;
+	transition: 0.2s ease;
+  }
+  
+  .aside_song-name1 {
+	font-size: 20px;
+	font-weight: 600;
+	color: var(--white);
+  }
+  
+  .aside_singer1 {
+	font-size: 14px;
+	color: var(--light-grey);
+  }
+  
+  .aside_text1 {
+	padding-left: 20px;
+	padding-top: 18px;
+	box-sizing: border-box;
+	width: 55%;
+	font-family: candara;
+  }
+  .home span a{
+	  color: rgba(127, 255, 212, 0.858);
+	  font-size: 25px;
+	 text-decoration: none;
+	 background-color: rgba(179, 18, 18, 0.507);
+	 border: 1px solid #841818;	
+  }
+  
+  .check {
+	display: none;
+  }
+  .aside_img2 img {
+	height: 3.2vw;
+	width: 3.2vw;
+	border-radius: 2.5px;
+	opacity: 0.9;
+	transition: 0.3s ease;
+  }
+  
+  .aside_list2:hover {
+	background-color: var(--header-bg-color1);
+  }
+  
+  .favourite {
+	color: var(--light-grey);
+	text-align: right;
+	margin-left: 20px;
+  }
+  .favourite:hover {
+	color: var(--white);
+  }
+  
+  @media (max-width: 700px) {
+	.logo {
+	  height: 5vmin;
+	  width: 5vmin;
+	  border-radius: 7px;
+	}
+	.logo div {
+	  height: 3.8vmin;
+	  width: 3.8vmin;
+	  border-radius: 7px;
+	}
+	.logo i {
+	  font-size: 1.5em;
+	}
+	.logoText {
+	  height: 5vmin;
+	  width: 7vmin;
+	  font-size: 16px;
+	  margin-top: 0px;
+	  line-height: 15px;
+	}
+	.search div input[type="text"] {
+	  width: 79%;
+	}
+	.band {
+	  display: flex;
+	  flex-direction: column;
+	  height: 120vh;
+	  padding: 10px;
+	  box-sizing: border-box;
+	}
+  
+	.arijit_img {
+	  width: 100%;
+	  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Arijit_5th_GiMA_Awards.jpg/220px-Arijit_5th_GiMA_Awards.jpg");
+	  background-position: top;
+	  opacity: 0.9;
+	}
+	.band_description {
+	  width: 100%;
+	}
+	.list_text {
+	  width: 60%;
+	}
+	.list_img img {
+	  height: 35px;
+	  width: 35px;
+	}
+  }
+  
